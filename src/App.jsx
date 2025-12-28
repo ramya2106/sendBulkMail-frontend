@@ -18,6 +18,7 @@ function App() {
       const mails = data.map(row => row.C).filter(Boolean);
       setEmails(mails);
     }
+    reader.readAsArrayBuffer(file);
   }
   const sendMail = async() =>{
     setSending(true);
